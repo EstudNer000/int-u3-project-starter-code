@@ -1,14 +1,21 @@
 /* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
 
-/* 
+ 
 .option-one-screen, 
 .option-two-screen, 
 .option-one-end, 
-.option-two-end  {
+.option-two-end, 
+.option-three-bad-ending
+  {
    display:none;
 }
-*/
 
+.option-one-two {
+    display: none;
+}
+.option-two-two {
+    display: none;
+}
 
 /* Feel free to change any of the styling below!*/
 html,
@@ -19,8 +26,8 @@ body {
 
 /* Style the body with a background color or image if desired */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    background-color: black;
     text-align: center;
     padding: 20px;
 }
@@ -30,11 +37,12 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    color:greenyellow;
 }
 
 /* Style the story opening container */
 .story-opening {
-    background-color: #fff;
+    background-color: beige;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
@@ -64,24 +72,24 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    background-color: greenyellow;
+    color: black;
+    border: 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: darkcyan;
 }
 
 /* Style the screens for option one and option two */
 .option-one-screen,
 .option-two-screen,
 .option-one-end,
-.option-two-end {
-    background-color: #fff;
+.option-two-end, .option-three-bad-ending, .option-two-end {
+    background-color:beige;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
@@ -93,7 +101,8 @@ button:hover {
 .option-one-screen img,
 .option-two-screen img,
 .option-one-end img,
-.option-two-end img {
+.option-two-end img,
+.option-three-bad-ending img, .option-two-end img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
@@ -106,4 +115,5 @@ button:hover {
 .option-two-end h1 {
     font-size: 20px;
     margin-bottom: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
